@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C17291C2C16ECB300056362 /* Documentation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729192C16E2A600056362 /* Documentation.docc */; };
 		4C1A3593245DFEE700C40FB5 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A3592245DFEE700C40FB5 /* App.swift */; };
 		4C1A3595245DFEE700C40FB5 /* IngestDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A3594245DFEE700C40FB5 /* IngestDocument.swift */; };
 		4C1A3599245DFEE800C40FB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A3598245DFEE800C40FB5 /* Assets.xcassets */; };
@@ -113,6 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4C1729192C16E2A600056362 /* Documentation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Documentation.docc; sourceTree = "<group>"; };
 		4C1A358F245DFEE700C40FB5 /* Movie Archive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Archive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1A3592245DFEE700C40FB5 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		4C1A3594245DFEE700C40FB5 /* IngestDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngestDocument.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				4C874A90245E032C0026B9D7 /* README.md */,
+				4C1729192C16E2A600056362 /* Documentation.docc */,
 				4C1E153724BB9E96000897F9 /* MovieArchive.playground */,
 				4CAC9F3B246885630031A9EE /* macOS */,
 				4C392A57249E72E000CD7308 /* Model */,
@@ -533,6 +536,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C17291C2C16ECB300056362 /* Documentation.docc in Sources */,
 				4C1A3595245DFEE700C40FB5 /* IngestDocument.swift in Sources */,
 				4C1A3593245DFEE700C40FB5 /* App.swift in Sources */,
 			);
@@ -657,6 +661,7 @@
 				INFOPLIST_FILE = macOS/Info.plist;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.reactorcontrol.movie-archive.macos";
+				PRODUCT_MODULE_NAME = MovieArchive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -675,6 +680,7 @@
 				INFOPLIST_FILE = macOS/Info.plist;
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.reactorcontrol.movie-archive.macos";
+				PRODUCT_MODULE_NAME = MovieArchive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -834,6 +840,7 @@
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Dependencies/Build/$(CONFIGURATION)/HandBrake";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.reactorcontrol.movie-archive.converter";
+				PRODUCT_MODULE_NAME = XPCConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_INCLUDE_PATHS = "";
@@ -856,6 +863,7 @@
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/Dependencies/Build/$(CONFIGURATION)/HandBrake";
 				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.reactorcontrol.movie-archive.converter";
+				PRODUCT_MODULE_NAME = XPCConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_INCLUDE_PATHS = "";
